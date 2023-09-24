@@ -11,24 +11,43 @@
 
 
 for(i = 1; i < 101; i++){
-    let numeros = [i]
-    for(multiplo of numeros){
-        if(multiplo % 3 == 0 && multiplo % 5 == 0){
+        if(i % 3 == 0 && i % 5 == 0){
             numero = 'fizzBuzz'
             console.log(numero)
     }else{
-        if(multiplo % 3 == 0 ) {  
+        if(i % 3 == 0 ) {  
             numero = 'fizz'
             console.log(numero)
         }else{
-            if(multiplo % 5 == 0){
+            if(i % 5 == 0){
                 numero = 'buzz'
                 console.log(numero)
             }else{
-                console.log(multiplo)
+                console.log(i)
     } 
    }
   } 
  }  
-}
+
+
+// for(i = 1; i < 101; i++){
+//         switch(true){
+//             case i % 3 == 0 && i % 5 == 0:
+//                 numero = 'fizzBuzz'
+//                 console.log(numero)
+//                 break;
+//             case i % 3 == 0 :
+//                 numero = 'fizz'
+//                 console.log(numero)
+//                 break;
+//             case i % 5 == 0:
+//                 numero = 'buzz'
+//                 console.log(numero)
+//                 break;
+//             default:
+//                 console.log(i)
+//         }
+//     }
+    
+        
 
