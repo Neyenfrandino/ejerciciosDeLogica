@@ -16,20 +16,19 @@ for(i = 1; i < 101; i++){
         if(multiplo % 3 == 0 && multiplo % 5 == 0){
             numero = 'fizzBuzz'
             console.log(numero)
+    }else{
+        if(multiplo % 3 == 0 ) {  
+            numero = 'fizz'
+            console.log(numero)
         }else{
-            if(multiplo % 3 == 0 ) {  
-                numero = 'fizz'
+            if(multiplo % 5 == 0){
+                numero = 'buzz'
                 console.log(numero)
             }else{
-                if(multiplo % 5 == 0){
-                    numero = 'buzz'
-                    console.log(numero)
-            }else{
                 console.log(multiplo)
-       } 
-      }
-        }
-     
+    } 
+   }
+  } 
  }  
 }
 
