@@ -25,19 +25,21 @@ def numero_par_impar(num):
 def fibonacci(n):
     n = n + 1
     if n <= 0:
-        return 'El numero debe ser porsitivo para calcular la secuencia de fibonacci'
+        return 'El numero debe ser positivo para calcular la secuencia de Fibonacci'
+    elif n == 1:
+        return [0]
+    elif n == 2:
+        return [0, 1]
     else:
-        f = []
-        for n in range(n):
-            operacion = (n - 1) + (n - 2)
-            f.append(operacion)
+        f = [0, 1]
+        for i in range(2, n):
+            next_number = f[i - 1] + f[i - 2]
+            f.append(next_number)
 
-        if n not in f:
-            return f'{n} no entra en la secuencia de fibonacci'
+        if n - 1 < len(f):
+            return f'{n} entra en la secuencia de Fibonacci: {f[n-1]}'
         else:
-            return f'{n} entra en la secuencia de fibonacci'
-
-
+            return f'{n} no entra en la secuencia de Fibonacci'
 
 def resultado(num):
     secuencia_de_fibonacci = fibonacci(num)
@@ -48,4 +50,4 @@ def resultado(num):
     print(f'{numero_es_primo}, {par_impar}, {secuencia_de_fibonacci}')
 
 
-resultado(55)
+resultado(19)
