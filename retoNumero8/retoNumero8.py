@@ -29,3 +29,19 @@ def heterograma (text) :
 
 
 heterograma(texto.lower())
+
+
+
+def isograma (frase):
+    acount_letter = ''
+    join_text = frase.replace(" ", "")
+    for i in (range(ord('a'), ord('z') + 1)):
+
+        if join_text.count(chr(i)) != 1:
+            print(f'Soy un isograma {frase.upper()}' )
+            return
+        else:
+            print(f'No soy un isograma {frase.upper()}')
+            return
+
+isograma('Paralelepípedo')
