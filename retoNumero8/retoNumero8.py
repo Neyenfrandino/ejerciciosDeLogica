@@ -7,12 +7,13 @@
 ##Heterograma:(Un heterograma es una palabra que no tiene ninguna letra repetida.)
 # "Jovencillo emponzoñado de whisky, qué mala figurota exhibes."
 
+##Isograma: (Esta palabra no tiene letras repetidas) = "Paralelepípedo"
 
 ##Pangrama: (Esta frase incluye todas las letras del alfabeto español al menos una vez)
 ## = "El veloz murciélago hindú comía feliz cardillo y kiwi."
 
 texto = 'Adulterinos'
-def isograma (text) :
+def heterograma (text) :
     acount_letter = ''
     join_text = text.replace(" ", "")
     for i in (range(ord('a'), ord('z') + 1)):
@@ -27,4 +28,4 @@ def isograma (text) :
         return
 
 
-isograma(texto.lower())
+heterograma(texto.lower())
