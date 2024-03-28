@@ -28,18 +28,4 @@ def heterograma (text) :
         return
 
 
-
-
-
-    ##if abcdario == text :
-      ##  print(f'si soy un Heterograma: {text} ')
-
-
-
-
-
-
-
-
-
 heterograma(texto.lower())
