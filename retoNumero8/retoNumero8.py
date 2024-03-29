@@ -33,10 +33,8 @@ heterograma(texto.lower())
 
 
 def isograma (frase):
-    acount_letter = ''
     join_text = frase.replace(" ", "")
     for i in (range(ord('a'), ord('z') + 1)):
-
         if join_text.count(chr(i)) != 1:
             print(f'Soy un isograma {frase.upper()}' )
             return
@@ -45,3 +43,19 @@ def isograma (frase):
             return
 
 isograma('Paralelepípedo')
+
+
+def pangrama(palabra):
+    abcdario = ''
+    join_text = palabra.replace(" ", "")
+
+    for i in (range(ord('a'), ord('z') + 1 )):
+        if chr(i) in join_text:
+            abcdario += chr(i)
+
+    if len(abcdario) == 26 :
+        print(f'Soy un pangrama: "{palabra.upper()}"')
+    else:
+        print(f'No soy un pangrama: "{palabra.upper()}"')
+
+pangrama("The quick brown fox jumps over the lazy dog.")
